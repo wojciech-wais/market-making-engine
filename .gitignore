@@ -1,0 +1,9 @@
+build/
+cmake-build-*/
+.cache/
+*.o
+*.a
+*.so
+compile_commands.json
+REPORT.md
+data/backtest_results.csv

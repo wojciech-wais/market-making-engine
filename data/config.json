@@ -1,0 +1,119 @@
+{
+    "instruments": [
+        {
+            "id": 1,
+            "symbol": "AAPL",
+            "tick_size": 0.01,
+            "lot_size": 1.0,
+            "base_spread_bp": 10.0,
+            "inventory_limit": 100.0,
+            "params": {
+                "base_spread_bp": 10.0,
+                "min_spread_bp": 2.0,
+                "max_spread_bp": 50.0,
+                "volatility_coeff": 1.5,
+                "inventory_coeff": 0.5,
+                "size_base": 5.0,
+                "size_inventory_scale": 0.5,
+                "quote_refresh_ms": 100.0,
+                "max_position": 100.0
+            }
+        },
+        {
+            "id": 2,
+            "symbol": "MSFT",
+            "tick_size": 0.01,
+            "lot_size": 1.0,
+            "base_spread_bp": 8.0,
+            "inventory_limit": 100.0,
+            "params": {
+                "base_spread_bp": 8.0,
+                "min_spread_bp": 2.0,
+                "max_spread_bp": 40.0,
+                "volatility_coeff": 1.2,
+                "inventory_coeff": 0.4,
+                "size_base": 5.0,
+                "size_inventory_scale": 0.5,
+                "quote_refresh_ms": 100.0,
+                "max_position": 100.0
+            }
+        },
+        {
+            "id": 3,
+            "symbol": "GOOGL",
+            "tick_size": 0.01,
+            "lot_size": 1.0,
+            "base_spread_bp": 12.0,
+            "inventory_limit": 50.0,
+            "params": {
+                "base_spread_bp": 12.0,
+                "min_spread_bp": 3.0,
+                "max_spread_bp": 60.0,
+                "volatility_coeff": 2.0,
+                "inventory_coeff": 0.6,
+                "size_base": 3.0,
+                "size_inventory_scale": 0.4,
+                "quote_refresh_ms": 150.0,
+                "max_position": 50.0
+            }
+        },
+        {
+            "id": 4,
+            "symbol": "AMZN",
+            "tick_size": 0.01,
+            "lot_size": 1.0,
+            "base_spread_bp": 15.0,
+            "inventory_limit": 50.0,
+            "params": {
+                "base_spread_bp": 15.0,
+                "min_spread_bp": 3.0,
+                "max_spread_bp": 80.0,
+                "volatility_coeff": 2.5,
+                "inventory_coeff": 0.7,
+                "size_base": 2.0,
+                "size_inventory_scale": 0.6,
+                "quote_refresh_ms": 200.0,
+                "max_position": 50.0
+            }
+        },
+        {
+            "id": 5,
+            "symbol": "TSLA",
+            "tick_size": 0.01,
+            "lot_size": 1.0,
+            "base_spread_bp": 20.0,
+            "inventory_limit": 30.0,
+            "params": {
+                "base_spread_bp": 20.0,
+                "min_spread_bp": 5.0,
+                "max_spread_bp": 100.0,
+                "volatility_coeff": 3.0,
+                "inventory_coeff": 0.8,
+                "size_base": 2.0,
+                "size_inventory_scale": 0.7,
+                "quote_refresh_ms": 200.0,
+                "max_position": 30.0
+            }
+        }
+    ],
+    "venues": [
+        {
+            "id": 1,
+            "name": "NYSE",
+            "maker_fee_bp": 0.5,
+            "taker_fee_bp": 1.5,
+            "latency_ms": 0.5,
+            "cancel_penalty_bp": 0.05
+        },
+        {
+            "id": 2,
+            "name": "NASDAQ",
+            "maker_fee_bp": 0.8,
+            "taker_fee_bp": 2.0,
+            "latency_ms": 0.3,
+            "cancel_penalty_bp": 0.1
+        }
+    ],
+    "data_file": "data/sample_lob_data.csv",
+    "fill_probability": 0.3
+}
